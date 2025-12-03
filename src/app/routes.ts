@@ -1,21 +1,10 @@
+// src/app/routes.ts
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { SobreComponent } from './pages/sobre/sobre.component';
-import { FaleComponent } from './pages/fale/fale.component';
 
 export const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'sobre', component: SobreComponent },
-  { path: 'fale', component: FaleComponent },
-
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-
-{path: 'dashboard',
-  loadComponent: () =>
-    import('./pages/dashboard/dashboard.component')
-      .then(m => m.DashboardComponent)
-}
-
-
-
+  { path: '', redirectTo: 'home', pathMatch: 'full' }, // "full" é obrigatório aqui
+  { path: 'home', loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent) },
+  { path: 'sobre', loadComponent: () => import('./pages/sobre/sobre.component').then(m => m.SobreComponent) },
+  { path: 'fale', loadComponent: () => import('./pages/fale/fale.component').then(m => m.FaleComponent) },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' } // se quiser wildcard
 ];

@@ -10,9 +10,9 @@
 
 <nav class="sidebar" [class.open]="menuOpen">
   <ul>
-    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/sobre" routerLinkActive="active">Sobre nós</a></li>
-    <li><a routerLink="/fale" routerLinkActive="active">Fale conosco</a></li>
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/sobre" routerLinkActive="active">Sobre</a></li>
+    <li><a routerLink="/fale" routerLinkActive="active">Fale Mais</a></li>
   </ul>
 </nav>
 
@@ -32,20 +32,17 @@
 
 <div class="login-area">
   <div class="login-bar">
-    <div class="login-box">
-      <div class="login-fields-row">
-        <div class="login-field">
-          <label>E-mail</label>
-          <input type="text" placeholder="E-mail" [(ngModel)]="email">
-        </div>
-        <div class="login-field">
-          <label>Senha</label>
-          <input type="password" placeholder="Senha" [(ngModel)]="senha">
-        </div>
-      </div>
-      <button class="login-btn-bar" (click)="entrar()">Entrar</button>
+    <div class="login-field">
+      <label for="username">Login</label>
+      <input id="username" type="text" placeholder="Digite seu login" class="login-input">
+    </div>
+    <div class="login-field">
+      <label for="password">Senha</label>
+      <input id="password" type="password" placeholder="Digite sua senha" class="login-input">
     </div>
   </div>
+
+  <button class="login-btn-bar">Entrar</button>
 </div>
 
 <footer class="footer">

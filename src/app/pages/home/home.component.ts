@@ -11,19 +11,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-toggleMenu() {
-throw new Error('Method not implemented.');
-}
+  // Controle do menu lateral
+  menuOpen: boolean = false;
 
-  // Campos do login
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  // Login
   email: string = '';
   senha: string = '';
-menuOpen: any;
 
-  // Construtor para navegar
   constructor(private router: Router) {}
 
-  // Slides (mantém aí se já tem)
+  entrar() {
+    if (this.email === 'admin@admin.com' && this.senha === '1234') {
+      alert('Login realizado com sucesso!');
+      this.router.navigate(['/dashboard']); // ou qualquer rota que exista
+    } else {
+      alert('E-mail ou senha incorretos!');
+    }
+  }
+
+  // Carrossel
   slides = ['1.png', '2.png', '3.png'];
   currentIndex = 0;
 
@@ -33,15 +43,5 @@ menuOpen: any;
 
   prevSlide() {
     this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-  }
-
-  // FUNÇÃO DE LOGIN
-  entrar() {
-    if (this.email === 'admin@admin.com' && this.senha === '1234') {
-      alert('Login realizado com sucesso!');
-      this.router.navigate(['/dashboard']);
-    } else {
-      alert('E-mail ou senha incorretos!');
-    }
   }
 }

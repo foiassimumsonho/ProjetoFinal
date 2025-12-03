@@ -12,7 +12,7 @@ import { RouterOutlet } from "@angular/router";
 export class AppComponent {
   menuOpen = false;
 
-  slides = ['1.png', '2.png', '3.png']; // Coloque suas imagens em public/img/
+  slides = ['1.png', '2.png', '3.png']; 
   currentIndex = 0;
 
   toggleMenu() {
