@@ -96,7 +96,7 @@ button.next { right: 10px; }
   background-color: #626901;
   .login-area {
   position: relative;
-  z-index: 10000; 
+  z-index: 10000px; 
 }
 
 }
