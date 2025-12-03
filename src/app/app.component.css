@@ -1,0 +1,8 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #E78101; /* sua cor da home */
+  padding-top: 10px; /* evita que o header fixe cubra a parte superior */
+  box-sizing: border-box;
+}

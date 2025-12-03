@@ -1,0 +1,69 @@
+<header class="header">
+  <div class="header-left">
+    <button class="menu-btn" (click)="toggleMenu()">☰</button>
+    <h1 class="logo">Arte Baiana</h1>
+  </div>
+  <div class="header-right">
+    <a href="#" class="login-btn">Login</a>
+  </div>
+</header>
+
+<nav class="sidebar" [class.open]="menuOpen">
+  <ul>
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/sobre" routerLinkActive="active">Sobre nós</a></li>
+    <li><a routerLink="/fale" routerLinkActive="active">Fale conosco</a></li>
+  </ul>
+</nav>
+
+
+<div class="content-area">
+
+  <div class="form-card">
+    <h2 class="title">Fale com a gente</h2>
+
+<form class="form" (submit)="enviarMensagem($event)">
+      <label>Nome</label>
+      <input type="text" placeholder="Seu nome">
+
+      <label>E-mail</label>
+      <input type="email" placeholder="Seu e-mail">
+
+      <label>Mensagem</label>
+      <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
+
+      <button class="send-btn">Enviar</button>
+    </form>
+  </div>
+
+<div class="right-side">
+    <img src="assets/img/image3.png" alt="Imagem ilustrativa">
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="assets/img/facebook.png" >
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="assets/img/instagram.png" >
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="assets/img/twitter.png" >
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-center">
+    <p>© Copyright 2025. Portal do Artesanato da Bahia. Direitos reservados.</p>
+  </div>
+
+  <div class="footer-right">
+    <div class="footer-links">
+      <a href="#">Termos de uso</a> | 
+      <a href="#">Política de Privacidade</a>
+    </div>
+  </div>
+</footer>
