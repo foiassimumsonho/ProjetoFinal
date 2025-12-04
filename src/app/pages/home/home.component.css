@@ -24,6 +24,7 @@
   background: none; 
   border: none; 
   color: white;
+
 }
 
 .logo { 
@@ -47,6 +48,7 @@
   background-color: #770101;
   padding: 20px;
   transition: left 0.3s;
+  font-family: 'Comic Sans MS', cursive;
   z-index: 1100;
 }
 
@@ -134,7 +136,9 @@ button.next { right: 10px; }
   font-weight: bold;
   margin-bottom: 5px;
   color: #fff;
-  font-size: 13px;
+  font-size: 18px;
+  font-family: 'Comic Sans MS', cursive;
+
 }
 
 .primeiro-acesso {
@@ -142,12 +146,16 @@ button.next { right: 10px; }
   margin-top: 5px;
   font-size: 13px;
   color: white;
+  font-family: 'Comic Sans MS', cursive;
+
 }
 
 .primeiro-acesso a {
   color: #c0881f;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Comic Sans MS', cursive;
+
 }
 
 .primeiro-acesso a:hover {
@@ -161,6 +169,7 @@ button.next { right: 10px; }
   border: none;
   font-size: 15px;
   font-weight: bold;
+  font-family: 'Comic Sans MS', cursive;
   cursor: pointer;
   display: block;
   margin: 8px auto 0;
@@ -192,6 +201,14 @@ button.next { right: 10px; }
   z-index: 1000;
   font-size: 14px;
 }
+
+.footer-center p {
+   margin: 0;
+    margin-left: 200px;
+  font-family: 'Comic Sans MS', cursive;
+
+}
+
 
 .social-icons a {
   margin-right: 10px;

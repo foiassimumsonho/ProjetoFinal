@@ -156,8 +156,9 @@ button:disabled {
   font-size: 14px;
 }
 
-.footer-center {
-  margin-left: 200px;
+.footer-center p {
+  margin: 0;
+    margin-left: 200px;
 }
 
 .social-icons a {

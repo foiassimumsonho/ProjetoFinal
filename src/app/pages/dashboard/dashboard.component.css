@@ -24,6 +24,8 @@
   background: none;
   border: none;
   color: white;
+    font-family: 'Comic Sans MS', cursive;
+
 }
 
 .logo {
@@ -47,6 +49,7 @@
   background-color: #770101;
   padding: 20px;
   transition: left 0.3s;
+    font-family: 'Comic Sans MS', cursive;
   z-index: 9999 !important;
 }
 
@@ -85,7 +88,7 @@
 .rectangle {
   width: 300px;
   height: 400px;
-  background-color: #626901;
+  background-color: #404404;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -93,6 +96,8 @@
   align-items: center;
   gap: 03px;
   color: #f8f7f8;
+font-family: 'Comic Sans MS', cursive;
+
 }
 
 .rectangle img {
@@ -129,9 +134,14 @@
   font-size: 14px;
 }
 
-.footer-center {
-  margin-left: 200px;
+.footer-center p {
+  margin: 0;
+    margin-left: 200px;
+      font-family: 'Comic Sans MS', cursive;
+
+
 }
+
 
 .social-icons a {
   margin-right: 10px;
