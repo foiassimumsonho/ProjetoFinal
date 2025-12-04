@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-fale',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, RouterLink, RouterLinkActive],
   templateUrl: './fale.component.html',
   styleUrls: ['./fale.component.css']
 })
@@ -20,7 +20,7 @@ export class FaleComponent {
   }
 
   enviarMensagem(event: Event) {
-  event.preventDefault(); // impede o recarregamento da página
+  event.preventDefault(); 
 
   alert(" Agradecemos pelo contato, sua mensagem já foi enviada");
 }

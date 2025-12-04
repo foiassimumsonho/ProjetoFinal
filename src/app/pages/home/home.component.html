@@ -11,11 +11,12 @@
 <nav class="sidebar" [class.open]="menuOpen">
   <ul>
     <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/sobre" routerLinkActive="active">Sobre</a></li>
-    <li><a routerLink="/fale" routerLinkActive="active">Fale Mais</a></li>
+    <li><a routerLink="/sobre" routerLinkActive="active">Sobre nós</a></li>
+    <li><a routerLink="/fale" routerLinkActive="active">Fale conosco</a></li>
+<li><a routerLink="/dashboard" routerLinkActive="active">Área credenciada</a></li>
+
   </ul>
 </nav>
-
 
 <main class="layout">
   <div class="carousel">
@@ -34,16 +35,17 @@
   <div class="login-bar">
     <div class="login-field">
       <label for="username">Login</label>
-      <input id="username" type="text" placeholder="Digite seu login" class="login-input">
+      <input id="username" type="text" placeholder="Digite seu login" class="login-input" [(ngModel)]="email">
     </div>
     <div class="login-field">
       <label for="password">Senha</label>
-      <input id="password" type="password" placeholder="Digite sua senha" class="login-input">
+      <input id="password" type="password" placeholder="Digite sua senha" class="login-input" [(ngModel)]="senha">
     </div>
   </div>
 
-  <button class="login-btn-bar">Entrar</button>
+  <button (click)="entrar()" class="login-btn-bar">Entrar</button>
 </div>
+
 
 <footer class="footer">
   <div class="footer-left">

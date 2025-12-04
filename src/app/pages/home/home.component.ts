@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink, RouterLinkActive],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent {
+  constructor(private router: Router) { }
   email = '';
   senha = '';
   menuOpen = false;
@@ -31,8 +34,10 @@ export class HomeComponent {
 
   entrar() {
     if (this.email === 'admin@admin.com' && this.senha === '1234') {
-      alert('Login realizado com sucesso!');
-    } else {
+      
+    alert('Login realizado com sucesso!');
+    this.router.navigate(['/dashboard']);
+  } else {
       alert('E-mail ou senha incorretos!');
     }
   }

@@ -41,6 +41,9 @@ height: calc(120vh - 70px);
 .sidebar ul { list-style: none; padding: 0; }
 .sidebar ul li a { text-decoration: none; color: #fafafa; display: block; margin-bottom: 10px; }
 
+.rectangle {
+  color:#f8f7f8;
+}
 
 .footer {
   width: 100%;

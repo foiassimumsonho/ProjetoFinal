@@ -1,11 +1,26 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
+import { FaleComponent } from './pages/fale/fale.component';
 
 export const routes: Routes = [
-  // redireciona '' para home
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-
-  // rotas principais
-  { path: 'home', loadComponent: () => import('./home/home.component').then(m => m.HomeComponent) },
-  { path: 'sobre', loadComponent: () => import('./sobre/sobre.component').then(m => m.SobreComponent) },
-  { path: 'fale', loadComponent: () => import('./fale/fale.component').then(m => m.FaleComponent) }
+  {
+        path: 'home',
+        component: HomeComponent,
+    },
+    {
+        path: 'dashboard',
+        component: DashboardComponent,
+    },
+    {
+        path: 'fale',
+        component: FaleComponent,
+    },
+    {
+        path: 'sobre',
+        component: SobreComponent,
+    },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', redirectTo: '/home' }
 ];
