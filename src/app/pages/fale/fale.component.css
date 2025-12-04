@@ -10,48 +10,76 @@
   align-items: center;
   padding: 0 20px;
   z-index: 1000;
-  
 }
 
-.header-left { display: flex; align-items: center; }
-.menu-btn { font-size: 24px; margin-right: 15px; cursor: pointer; background: none; border: none; color: white }
-.logo { color: #fefdff; font-size: 24px; margin: 0; }
-.header-right .login-btn { text-decoration: none; color: #f8f7f8; font-weight: bold; }
+.header-left { 
+  display: flex; 
+  align-items: center; 
+}
+
+.menu-btn { 
+  font-size: 24px; 
+  margin-right: 15px; 
+  cursor: pointer; 
+  background: none; 
+  border: none; 
+  color: white; 
+}
+
+.logo { 
+  color: #fefdff; 
+  font-size: 24px; 
+  margin: 0; 
+}
+
+.header-right .login-btn { 
+  text-decoration: none; 
+  color: #f8f7f8; 
+  font-weight: bold; 
+}
 
 .sidebar {
   position: fixed;
   top: 50px;
   left: -200px;
   width: 200px;
-  height: calc(120vh - 70px);
+  height: calc(100vh - 50px);
   background-color: #770101;
   padding: 20px;
   transition: left 0.3s;
   z-index: 9999 !important;
 }
 
-
-
 .sidebar.open { left: 0; }
-.sidebar ul { list-style: none; padding: 0; }
-.sidebar ul li a { text-decoration: none; color: #fafafa; display: block; margin-bottom: 10px; }
+
+.sidebar ul { 
+  list-style: none; 
+  padding: 0; 
+}
+
+.sidebar ul li a { 
+  text-decoration: none; 
+  color: #fafafa; 
+  display: block; 
+  margin-bottom: 10px; 
+}
 
 .content-area {
-display: flex;
-    height: 450px;
+  display: flex;
+  height: 450px;
   width: 700px;
-    margin-top: 70px;
-    margin-left: 300px;
+  margin-top: 70px;
+  margin-left: 300px;
 }
 
 .form-card {
-  background-color: #E78101; 
+  background-color: #E78101;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
-  width: 350px;         
+  width: 350px;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   gap: 20px;
 }
 
@@ -64,16 +92,14 @@ display: flex;
 .form {
   display: flex;
   flex-direction: column;
-  gap: 09px;
-  box-sizing: border-box;
-    width: 300px;         
-
+  gap: 9px;
+  width: 300px;
 }
 
 .form input,
 .form textarea {
-  padding: 6px 10px;        
-  font-size: 14px;         
+  padding: 6px 10px;
+  font-size: 14px;
   border-radius: 6px;
   border: none;
   box-sizing: border-box;
@@ -81,17 +107,15 @@ display: flex;
 
 .send-btn {
   width: 50%;
-margin-left: 150px; 
- padding: 10px;
-  font-size: 16px;          
+  padding: 10px;
+  font-size: 16px;
   border-radius: 6px;
   background-color: #770101;
   color: white;
   border: none;
   cursor: pointer;
+  margin-left: 150px;
 }
-
-
 
 .send-btn:hover {
   background-color: #e24a0b;
@@ -101,25 +125,23 @@ margin-left: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 40px;    
+  padding-left: 40px;
 }
 
 .right-side img {
-  width: 300px;           
+  width: 300px;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 
-
 :host {
   display: block;
   min-height: 95vh;
-  background-color: #626901; 
-  padding-top: 10px; 
+  background-color: #626901;
+  padding-top: 10px;
   box-sizing: border-box;
 }
 
-/* Rodapé */
 .footer {
   width: 100%;
   background-color: #770101;
@@ -136,10 +158,7 @@ margin-left: 150px;
 }
 
 .footer-center {
-  padding: -10px;
-margin-bottom: -10px;
-margin-left: 200px;
-
+  margin-left: 200px;
 }
 
 .social-icons a {

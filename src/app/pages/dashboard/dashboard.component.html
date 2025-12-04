@@ -13,54 +13,48 @@
     <li><a routerLink="/" routerLinkActive="active">Home</a></li>
     <li><a routerLink="/sobre" routerLinkActive="active">Sobre nós</a></li>
     <li><a routerLink="/fale" routerLinkActive="active">Fale conosco</a></li>
-<li><a routerLink="/dashboard" routerLinkActive="active">Área credenciada</a></li>
   </ul>
 </nav>
 
 
-<div class="dashboard-grid">
-  <!-- <div class="dash-card" *ngFor="let card of cards">
-    <div class="card-img">
-      <img [src]="card.img" alt="Imagem do card">
-    </div>
-    <div class="card-text">
-      <p>{{ card.text }}</p>
-    </div>
-  </div>
-  <p>hey</p> -->
-
 <div class="container">
-  <!-- <div class="rectangle left">
-    <img src="assets/img/image.png" alt="Imagem 1" />
-    <img src="assets/img/image2.png" alt="Imagem 2" />
-  </div> -->
   <div class="rectangle">
-    <p><strong>Nome da Loja</strong></p>
-        <img src="assets/img/image.png" alt="Imagem 1" />
-     <p>Endereço da Loja: Rua Whatever, Barra, n53, Salvador Bahia, Brasil</p>
-     <button class="visitmap">Ver no mapa</button>
-  </div>
+    <p><strong>AFROCOLAB</strong></p>
+        <img src="assets/img/afro.png" alt="Imagem 1" />
+     <p>Localizado em: Shopping Paralela L2 Paralela - Av. Luís Viana Filho, 8544 Alphaville, Salvador - BA, 41730-101</p>
+ <button class="visitmap" onclick="window.location.href='https://www.google.com/maps/search/afrocolab+shopping+paralela/@-12.9368717,-38.4106199,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D'">Ver no mapa</button>  </div>
+  
+
+  <div class="rectangle">   
+        <p><strong>STARTEI</strong></p>                    
+        <img src="assets/img/startei.png" alt="Imagem 1" />
+     <p>Localizado em: Shopping Bela Vista L2 Endereço: Alameda Euvaldo Luz, 92 Horto Bela Vista, Salvador - BA, 41098-020</p>
+ <button class="visitmap" onclick="window.location.href='https://www.google.com/maps/place/Startei/@-12.969989,-38.477114,17z/data=!3m1!4b1!4m6!3m5!1s0x7161b1b1eefffff:0x5cf530b52168cfd5!8m2!3d-12.969989!4d-38.4745391!16s%2Fg%2F11kbwm547p?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D'">Ver no mapa</button>  </div>
+  
 
   <div class="rectangle">
-    <p><strong>Nome da Loja</strong></p>
-        <img src="assets/img/image.png" alt="Imagem 1" />
-     <p>Endereço da Loja: Rua Whatever, Barra, n53, Salvador Bahia, Brasil</p>
-     <button class="visitmap">Ver no mapa</button>
-  </div>
+    <p><strong>CEN</strong></p>
+        <img src="assets/img/cen.png" alt="Imagem 1" />
+     <p>Localizado em: Cooperativa Baiana de Teatro Endereço: R. Alaíde do feijão, 25 - Pelourinho, Salvador - BA, 40026-230
+      <br>
+      <a routerLink="/dashboarddetalhes">(71) 3617-0951</a>
 
+     </p>
+ <button class="visitmap" onclick="window.location.href='https://www.google.com/maps/place/Coletivo+de+Entidades+Negras/@-12.9744771,-38.5126688,17z/data=!3m2!4b1!5s0x71604e87acca805:0xa4e72d796621f8a6!4m6!3m5!1s0x71604e86ff7c49d:0x15317b29630a0f7e!8m2!3d-12.9744771!4d-38.5080554!16s%2Fg%2F11fy_3_kbp?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D'">Ver no mapa</button>  </div>
+  
+    
   <div class="rectangle">
-    <p><strong>Nome da Loja</strong></p>
-        <img src="assets/img/image.png" alt="Imagem 1" />
-     <p>Endereço da Loja: Rua Whatever, Barra, n53, Salvador Bahia, Brasil</p>
-     <button class="visitmap">Ver no mapa</button>
-  </div>
-
-  <div class="rectangle">
-    <p><strong>Nome da Loja</strong></p>
-        <img src="assets/img/image.png" alt="Imagem 1" />
-     <p>Endereço da Loja: Rua Whatever, Barra, n53, Salvador Bahia, Brasil</p>
-     <button class="visitmap">Ver no mapa</button>
-  </div>
+    <p><strong>VALE DO DENDÊ</strong></p>
+        <img src="assets/img/vale.png" alt="Imagem 1" />
+     <p>Localizado em: Vale do dendê Endereço: R. das Laranjeiras, 2 - Pelourinho, Salvador - BA, 
+      <br>
+      40026-010
+      <br>
+      <a routerLink="/dashboarddetalhes">(71) 3617-0951</a>
+    </p> 
+  
+ <button class="visitmap" onclick="window.location.href='https://www.google.com/maps/place/Casa+Vale+do+Dend%C3%AA/@-12.973297,-38.511793,17z/data=!3m1!4b1!4m6!3m5!1s0x71605b8495839db:0xb3dec483763a503d!8m2!3d-12.973297!4d-38.5092181!16s%2Fg%2F11tp7lpzy6?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D'">Ver no mapa</button>  </div>
+  
 
 
 </div>
@@ -82,13 +76,13 @@
   </div>
 
   <div class="footer-center">
-    <p>© Copyright 2025. Portal do Artesanato da Bahia. Direitos reservados.</p>
+    <p>© Copyright 2025. Arte Baiana. Direitos reservados.</p>
   </div>
 
   <div class="footer-right">
     <div class="footer-links">
-      <a href="#">Termos de uso</a> | 
-      <a href="#">Política de Privacidade</a>
+      <a href="https://portaldatransparencia.gov.br/termos-de-uso">Termos de uso</a> | 
+      <a href="https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/ppsi/modelo_ppdp.pdf">Política de Privacidade</a>
     </div>
   </div>
 </footer>

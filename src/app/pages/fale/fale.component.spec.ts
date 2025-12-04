@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FaleComponent } from './fale.component';
 
 describe('FaleComponent', () => {

@@ -11,13 +11,15 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 
+
+
 export class HomeComponent {
   constructor(private router: Router) { }
-  email = '';
-  senha = '';
+ email: string = '';
+  senha: string = '';
   menuOpen = false;
 
-  slides = ['1.png', '2.png', '3.png'];
+  slides = ['4.png', '2.png', '3.png'];
   currentIndex = 0;
 
   toggleMenu() {
@@ -32,13 +34,21 @@ export class HomeComponent {
     this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
   }
 
-  entrar() {
-    if (this.email === 'admin@admin.com' && this.senha === '1234') {
-      
+entrar() {
+  const dados = localStorage.getItem('usuarioCadastro');
+
+  if (!dados) {
+    alert('Nenhum cadastro encontrado!');
+    return;
+  }
+
+  const usuario = JSON.parse(dados);
+
+  if (this.email === usuario.email && this.senha === usuario.senha) {
     alert('Login realizado com sucesso!');
     this.router.navigate(['/dashboard']);
   } else {
-      alert('E-mail ou senha incorretos!');
-    }
+    alert('E-mail ou senha incorretos!');
   }
+}
 }
