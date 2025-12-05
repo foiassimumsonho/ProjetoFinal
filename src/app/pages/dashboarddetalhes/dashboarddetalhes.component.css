@@ -35,12 +35,15 @@
 }
 
 .logo {
-  color: #fff;
-  margin-top: 8px;
-  font-size: 24px;
-  white-space: nowrap; 
+  margin-right: 10px;
+  display: flex;     
+  align-items: center;
 }
 
+.logo img {
+  height: 100px;       
+  width: auto;        
+  object-fit: contain}
 .header-right .login-btn {
   text-decoration: none;
   color: #f8f7f8;

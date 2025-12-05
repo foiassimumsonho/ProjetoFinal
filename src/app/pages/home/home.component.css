@@ -9,7 +9,7 @@
   background-color: #E78101;
   padding-top: 10px;
   min-height: 100vh;
-  padding-bottom: 60px; 
+  padding-bottom: 0px; 
 }
 
 .header {
@@ -41,10 +41,15 @@
 }
 
 .logo {
-  color: #fff;
-  font-size: 24px;
-  margin: 0;
+  margin-right: 10px;
+  display: flex;     
+  align-items: center;
 }
+
+.logo img {
+  height: 100px;       
+  width: auto;        
+  object-fit: contain}
 
 .header-right .login-btn {
   text-decoration: none;
@@ -123,10 +128,10 @@ button.next { right: 10px; }
 
 .login-area {
   width: 100%;
-  margin: 0 auto; 
-  padding: 20px 20px;
+  margin:  auto; 
+  padding: 12px 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 05px;
   background-color: #626901;
   font-family: 'Comic Sans MS';
 }
@@ -221,7 +226,7 @@ button.next { right: 10px; }
 @media (max-width: 768px) {
 
   .carousel {
-    height: 35vh; 
+    height: 40vh; 
   }
   
   button.prev, button.next {
@@ -249,7 +254,8 @@ button.next { right: 10px; }
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 50px;
   }
 
   .footer-center p {
