@@ -36,7 +36,7 @@
   background: none;
   border: none;
   color: white;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Sans MS';
 }
 
 .logo {
@@ -61,7 +61,7 @@
   padding: 20px;
   transition: left 0.3s;
   z-index: 999;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Sans MS';
 }
 
 .sidebar.open {
@@ -101,8 +101,8 @@
   align-items: center;
   color: #fff;
   gap: 13px;
-  font-family: 'Comic Sans MS', cursive;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adicionei uma sombra leve para destaque */
+  font-family: 'Comic Sans MS';
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .rectangle img {
@@ -110,9 +110,6 @@
   height: auto;
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
 .footer {
   width: 100%;
   background-color: #D05421;
@@ -152,14 +149,10 @@
 }
 
 @media (max-width: 860px) {
-
-  /* 1. ZERAMOS O PADDING LATERAL DA TELA (HOST) */
-  /* Isso permite que o footer encoste nas bordas */
   :host {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
-    /* O padding-top continua o mesmo do desktop */
   }
 
   .container {
