@@ -1,0 +1,64 @@
+<header class="header">
+  <div class="header-left">
+    <button class="menu-btn" (click)="toggleMenu()">☰</button>
+       <div class="logo">
+  <img src="assets/img/32 CM.png" alt="Logo Arte Baiana"> </div>
+  </div>
+</header>
+
+<nav class="sidebar" [class.open]="menuOpen">
+  <ul>
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/sobre" routerLinkActive="active">Sobre nós</a></li>
+    <li><a routerLink="/fale" routerLinkActive="active">Fale conosco</a></li>
+
+  </ul>
+</nav>
+
+
+<div class="container">
+  <div class="rectangle left">
+    <img src="assets/img/image.png" alt="Imagem 1" />
+    <img src="assets/img/image2.png" alt="Imagem 2" />
+  </div>
+  <div class="rectangle">
+     <p>
+O Arte BA nasceu da vontade de facilitar a vida de artistas que estão começando. 
+Quando entrei nesse mundo, não sabia onde vender ou divulgar meus trabalhos e sei que 
+muita gente passa pelo mesmo. Por isso criei esse espaço: um guia simples e acessível 
+com lojas colaborativas e plataformas onde você pode colocar sua arte no mundo. 
+<br>
+O objetivo é só um: abrir caminhos. Mostrar que existe espaço pra você, pra sua arte, 
+pro seu estilo, pro que você acredita. A ideia desse site surgiu da minha própria caminhada, 
+dos perrengues que passei e dos atalhos que eu gostaria que alguém tivesse me mostrado lá no início.
+</div>
+
+
+</div>
+
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="assets/img/facebook.png" >
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="assets/img/instagram.png" >
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="assets/img/twitter.png" >
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-center">
+    <p>© Copyright 2025. Arte Baiana. Direitos reservados.</p>
+  </div>
+
+  <div class="footer-right">
+    <div class="footer-links">
+      <a href="https://portaldatransparencia.gov.br/termos-de-uso">Termos de uso</a> 
+    </div>
+  </div>
+</footer>

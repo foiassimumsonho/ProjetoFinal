@@ -1,0 +1,98 @@
+<header class="header">
+  <div class="header-left">
+    <button class="menu-btn" (click)="toggleMenu()">☰</button>
+    <div class="logo">
+      <img src="assets/img/32 CM.png" alt="Logo Arte Baiana">
+    </div>
+  </div>
+  
+  <div class="header-right">
+    <button class="logout-btn" (click)="logout()">Sair ➜</button>
+  </div>
+</header>
+
+<nav class="sidebar" [class.open]="menuOpen">
+  <ul>
+        <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/sobre" routerLinkActive="active">Sobre nós</a></li>
+    <li><a routerLink="/fale" routerLinkActive="active">Fale Conosco</a></li>
+  </ul>
+</nav>
+
+
+<div class="container">
+  <div class="rectangle">
+    <p><strong>AFROCOLAB</strong></p>
+        <img src="assets/img/afro.png" alt="Imagem 1" />
+     <p>Localizado em: Shopping Paralela L2 Paralela - Av. Luís Viana Filho, 8544 Alphaville, Salvador - BA, 41730-101
+      <br>
+      Tel: (71)3617-0951
+     </p>
+ <button class="visitmap" onclick="window.location.href='https://www.google.com/maps/search/afrocolab+shopping+paralela/@-12.9368717,-38.4106199,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D'">Ver no mapa</button>  </div>
+  
+
+  <div class="rectangle">   
+        <p><strong>STARTEI</strong></p>                    
+        <img src="assets/img/startei.png" alt="Imagem 1" />
+     <p>Localizado em: Shopping Bela Vista L2 Endereço: Alameda Euvaldo Luz, 92 Horto Bela Vista, Salvador - BA, 41098-020
+            <br>
+      Tel: <a href="https://api.whatsapp.com/send/?phone=5571997120017&text&type=phone_number&app_absent=0">(71)99712-0017</a>
+
+     </p>
+     
+ <button class="visitmap" onclick="window.location.href='https://www.google.com/maps/place/Startei/@-12.969989,-38.477114,17z/data=!3m1!4b1!4m6!3m5!1s0x7161b1b1eefffff:0x5cf530b52168cfd5!8m2!3d-12.969989!4d-38.4745391!16s%2Fg%2F11kbwm547p?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D'">Ver no mapa</button>  </div>
+  
+
+  <div class="rectangle">
+    <p><strong>CEN</strong></p>
+        <img src="assets/img/cen.png" alt="Imagem 1" />
+     <p>Localizado em: Cooperativa Baiana de Teatro Endereço: R. Alaíde do feijão, 25 - Pelourinho, Salvador - BA, 40026-230
+      <br>
+      Tel: <a href="https://api.whatsapp.com/send/?phone=5575991897827&text&type=phone_number&app_absent=0">(75)99189-7827</a>
+
+     </p>
+ <button class="visitmap" onclick="window.location.href='https://www.google.com/maps/place/Coletivo+de+Entidades+Negras/@-12.9744771,-38.5126688,17z/data=!3m2!4b1!5s0x71604e87acca805:0xa4e72d796621f8a6!4m6!3m5!1s0x71604e86ff7c49d:0x15317b29630a0f7e!8m2!3d-12.9744771!4d-38.5080554!16s%2Fg%2F11fy_3_kbp?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D'">Ver no mapa</button>  </div>
+  
+    
+  <div class="rectangle">
+    <p><strong>VALE DO DENDÊ</strong></p>
+        <img src="assets/img/vale.png" alt="Imagem 1" />
+     <p>Localizado em: Vale do dendê Endereço: R. das Laranjeiras, 2 - Pelourinho, Salvador - BA, 
+      <br>
+      40026-010
+      <br>
+      Tel: <a href="https://api.whatsapp.com/send/?phone=5571983169673&text&type=phone_number&app_absent=0">(71)98316-9673</a>
+    </p> 
+  
+ <button class="visitmap" onclick="window.location.href='https://www.google.com/maps/place/Casa+Vale+do+Dend%C3%AA/@-12.973297,-38.511793,17z/data=!3m1!4b1!4m6!3m5!1s0x71605b8495839db:0xb3dec483763a503d!8m2!3d-12.973297!4d-38.5092181!16s%2Fg%2F11tp7lpzy6?entry=ttu&g_ep=EgoyMDI1MTEzMC4wIKXMDSoASAFQAw%3D%3D'">Ver no mapa</button>  </div>
+  
+
+
+</div>
+
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="assets/img/facebook.png" >
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="assets/img/instagram.png" >
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="assets/img/twitter.png" >
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-center">
+    <p>© Copyright 2025. Arte Baiana. Direitos reservados.</p>
+  </div>
+
+  <div class="footer-right">
+    <div class="footer-links">
+      <a href="https://portaldatransparencia.gov.br/termos-de-uso">Termos de uso</a> 
+    </div>
+  </div>
+</footer>

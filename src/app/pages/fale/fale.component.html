@@ -1,0 +1,105 @@
+<header class="header">
+  <div class="header-left">
+    <button class="menu-btn" (click)="toggleMenu()">☰</button>
+     <div class="logo">
+  <img src="assets/img/32 CM.png" alt="Logo Arte Baiana"> </div>
+  </div>
+ 
+</header>
+
+<nav class="sidebar" [class.open]="menuOpen">
+  <ul>
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/sobre" routerLinkActive="active">Sobre nós</a></li>
+    <li><a routerLink="/fale" routerLinkActive="active">Fale conosco</a></li>
+
+  </ul>
+</nav>
+
+
+<div class="content-area">
+
+<div class="form-card">
+  <h2 class="title">Fale com a gente</h2>
+
+  <form class="form" (ngSubmit)="enviarMensagem(faleForm)" #faleForm="ngForm">
+    
+    <div class="input-group">
+      <input 
+        type="text" 
+        placeholder="Seu Nome" 
+        [(ngModel)]="contato.nome" 
+        name="nome" 
+        required 
+        #nomeRef="ngModel"
+        [class.invalid]="nomeRef.invalid && nomeRef.touched">
+      
+      <div *ngIf="nomeRef.invalid && nomeRef.touched" class="error-msg">
+        Nome é obrigatório.
+      </div>
+    </div>
+
+    <div class="input-group">
+      <input 
+        type="email" 
+        placeholder="Seu E-mail" 
+        [(ngModel)]="contato.email" 
+        name="email" 
+        required 
+        email 
+        #emailRef="ngModel"
+        [class.invalid]="emailRef.invalid && emailRef.touched">
+      
+      <div *ngIf="emailRef.invalid && emailRef.touched" class="error-msg">
+        <span *ngIf="emailRef.errors?.['required']">O e-mail é obrigatório.</span>
+<span *ngIf="emailRef.errors?.['email']">Digite um e-mail válido (ex: &#64;gmail.com).</span>      </div>
+    </div>
+
+    <div class="input-group">
+      <textarea 
+        placeholder="Sua Mensagem" 
+        [(ngModel)]="contato.mensagem" 
+        name="mensagem" 
+        required
+        #msgRef="ngModel"
+        [class.invalid]="msgRef.invalid && msgRef.touched"></textarea>
+
+       <div *ngIf="msgRef.invalid && msgRef.touched" class="error-msg">
+        A mensagem não pode estar vazia.
+      </div>
+    </div>
+
+    <button type="submit" class="send-btn" [disabled]="faleForm.invalid">Enviar</button>
+  </form>
+</div>
+
+<div class="right-side">
+    <img src="assets/img/image3.png" alt="Imagem ilustrativa">
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="assets/img/facebook.png" >
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="assets/img/instagram.png" >
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="assets/img/twitter.png" >
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-center">
+    <p>© Copyright 2025. Arte Baiana. Direitos reservados.</p>
+  </div>
+
+  <div class="footer-right">
+    <div class="footer-links">
+      <a href="https://portaldatransparencia.gov.br/termos-de-uso">Termos de uso</a>  
+    </div>
+  </div>
+</footer>
